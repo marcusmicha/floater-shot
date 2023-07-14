@@ -1,0 +1,20 @@
+model: "distilbert-base-uncased-finetuned-sst-2-english"
+metric: "accuracy"
+path_to_save: './model'
+training_arguments:
+  output_dir: "./results"
+  use_mps_device: True
+  learning_rate: 0.00002
+  per_device_train_batch_size : 16
+  per_device_eval_batch_size: 16
+  num_train_epochs: 3
+  weight_decay: 0.01
+  evaluation_strategy: 'steps'
+  logging_steps: 100
+  eval_steps: 50
+  save_steps: 50
+  eval_accumulation_steps: 1
+  load_best_model_at_end: True
+  metric_for_best_model: "loss"
+  run_name: 'floater-shot'
+  report_to: 'wandb'
