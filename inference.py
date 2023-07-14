@@ -60,7 +60,7 @@ st.write('    ')
 st.write('    ')
 
 
-input = st.text_input('Try a commentary', 'Wemby dunked over everyone !')
+input = st.text_input('Try a commentary', 'Wemby lobbed over everyone !')
 if st.button('Is it describing any action ?'):
     infer(input)
 
