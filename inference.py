@@ -53,7 +53,7 @@ def get_action(text:str) -> str:
             return action
     return 'No action detected'
 
-st.title('NLP team\'s task inference !')
+st.title('NBA comments task inference !')
 st.write('    ')
 st.write('    ')
 st.write('    ')
